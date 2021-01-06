@@ -2,10 +2,10 @@ resources:
   - name: app_repo
     type: GitRepo
     configuration:
-      gitProvider: Git                     # <-- replace with your integration
+      gitProvider: github                     # <-- replace with your integration
       path: app    # <-- replace with your repository name
       branches:
-        include: dev
+        include: master
 
   - name: webapp_image
     type: Image
